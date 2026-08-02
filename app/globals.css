@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --star-line: rgba(11, 77, 60, 0.08);
+}
+
+.dark {
+  --star-line: rgba(201, 162, 75, 0.10);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ivory text-masjid-900 dark:bg-masjid-950 dark:text-parchment font-body antialiased;
+}
+
+/* ---------- Islamic geometric watermark (repeating 8-point star lattice) ---------- */
+.geo-watermark {
+  background-image:
+    radial-gradient(circle, var(--star-line) 1px, transparent 1px),
+    repeating-linear-gradient(45deg, var(--star-line) 0, var(--star-line) 1px, transparent 1px, transparent 40px),
+    repeating-linear-gradient(-45deg, var(--star-line) 0, var(--star-line) 1px, transparent 1px, transparent 40px);
+  background-size: 28px 28px, 56px 56px, 56px 56px;
+}
+
+/* ---------- Glassmorphism ---------- */
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark .glass {
+  background: rgba(5, 36, 27, 0.45);
+  border: 1px solid rgba(201, 162, 75, 0.15);
+}
+
+.glass-solid {
+  background: rgba(250, 247, 240, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.dark .glass-solid {
+  background: rgba(3, 26, 19, 0.85);
+}
+
+/* ---------- Gold text gradient ---------- */
+.gold-text {
+  background: linear-gradient(120deg, #DEBE6C 0%, #C9A24B 45%, #F3E5BE 65%, #A9843A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Section eyebrow divider using the khatam star ---------- */
+.khatam-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.khatam-divider::before,
+.khatam-divider::after {
+  content: "";
+  height: 1px;
+  width: 2.5rem;
+  background: linear-gradient(90deg, transparent, #C9A24B);
+}
+.khatam-divider::after {
+  background: linear-gradient(90deg, #C9A24B, transparent);
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#0B4D3C, #C9A24B);
+  border-radius: 8px;
+}
+
+/* ---------- Focus visibility (a11y) ---------- */
+:focus-visible {
+  outline: 2px solid #C9A24B;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
