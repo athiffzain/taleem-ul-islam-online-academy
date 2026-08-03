@@ -61,14 +61,25 @@ export default function Contact() {
               </a>
             </div>
 
-            <a
-              href="https://wa.me/917760414172"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 rounded-full bg-[#25D366] text-white font-semibold py-3.5 shadow-md hover:brightness-95 transition"
-            >
-              <MessageCircle size={18} /> Chat on WhatsApp
-            </a>
+            <div className="space-y-3">
+  <a
+    href="https://wa.me/917760414172"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-2 rounded-full bg-[#25D366] text-white font-semibold py-3.5 shadow-md hover:brightness-95 transition"
+  >
+    <MessageCircle size={18} /> WhatsApp (Mufti Athif Zain)
+  </a>
+
+  <a
+    href="https://wa.me/917730028313"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center gap-2 rounded-full bg-[#25D366] text-white font-semibold py-3.5 shadow-md hover:brightness-95 transition"
+  >
+    <MessageCircle size={18} /> WhatsApp (Academy)
+  </a>
+</div>
           </motion.div>
 
           <motion.div
