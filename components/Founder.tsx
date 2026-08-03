@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 import KhatamStar from "./KhatamStar";
 
-export default function Founder () {
+export default function Founder() {
   return (
     <section className="relative py-24 md:py-32 bg-masjid-600 dark:bg-masjid-950 overflow-hidden">
       <div className="absolute inset-0 geo-watermark opacity-30" />
@@ -25,11 +25,7 @@ export default function Founder () {
           <h3 className="font-display text-2xl md:text-3xl font-bold text-ivory leading-snug">
             Hazrat Maulana Mohammed Nadeem Ahmed Saheb Madni Qasmi
           </h3>
-          <p className="mt-4 text-parchment/80 leading-relaxed max-w-xl mx-auto">
-            Founder & Principal of Madresa-e-Taleem Ul Islam, dedicated to spreading authentic
-            Islamic education and the noble science of Tajweed for nearly a decade,
-            guiding hundreds of students on the path of the Qur&apos;an.
-          </p>
+          
         </motion.div>
       </div>
     </section>
