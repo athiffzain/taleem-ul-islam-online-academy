@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 import KhatamStar from "./KhatamStar";
 
-export default function Founder & Principal() {
+export default function Founder () {
   return (
     <section className="relative py-24 md:py-32 bg-masjid-600 dark:bg-masjid-950 overflow-hidden">
       <div className="absolute inset-0 geo-watermark opacity-30" />

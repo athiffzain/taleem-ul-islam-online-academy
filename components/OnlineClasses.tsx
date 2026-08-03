@@ -7,8 +7,6 @@ import SectionHeading from "./SectionHeading";
 const schedule = [
   { batch: "All Batches", time: "3:00 PM – 11:00 PM (IST)" },
 ];
-];
-
 export default function OnlineClasses() {
   return (
     <section id="online-classes" className="py-24 md:py-32 bg-parchment/40 dark:bg-masjid-900/30">

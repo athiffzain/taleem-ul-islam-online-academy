@@ -9,46 +9,44 @@ const courses = [
     icon: BookMarked,
     name: "Noorani Qaida",
     features: [
-      "Arabic alphabet recognition",
-      "Correct pronunciation (Makharij)",
-      "Foundational Tajweed rules",
-      "One-on-one attention",
+      "Arabic Letters",
+      "Correct Qur'an Reading",
+      "Basic Tajweed",
+      "Personal Guidance",
     ],
   },
   {
     icon: ScrollText,
     name: "Nazira Qur'an",
     features: [
-      "Fluent Qur'an reading with Tajweed",
-      "Daily revision (Sabaq/Sabqi)",
-      "Separate boys' & girls' batches",
-      "Regular progress reports",
+      "Qur'an Reading with Tajweed",
+      "Daily Reading Practice",
+      "Separate Classes for Boys & Girls",
+      "Regular Progress Check",
     ],
     featured: true,
   },
   {
     icon: Award,
     name: "Hifz-ul-Qur'an",
-    },
-{
-  icon: Library,
-  name: "Islamic Studies & Essential Learning",
-  features: [
-    "Daily Duas",
-    "Selected Ahadees",
-    "Basic Aqaid",
-    "Islamic Studies",
-    "Akhlaq & Adaab",
-    "Daily Masail",
-    "Namaz & Salah Training",
-  ],
-},
-];
     features: [
-      "Complete memorization program",
-      "Structured daily revision cycle",
-      "Experienced Hifz teachers",
-      "Ijazah guidance on completion",
+      "Complete Qur'an Memorization",
+      "Daily Revision",
+      "Experienced Teachers",
+      "Completion Guidance",
+    ],
+  },
+  {
+    icon: Library,
+    name: "Other Courses",
+    features: [
+      "Daily Duas",
+      "Selected Ahadees",
+      "Basic Aqaid",
+      "Regular Islamic Knowledge",
+      "Akhlaq & Adaab",
+      "Basic Masail",
+      "Namaz & Salah Training",
     ],
   },
 ];
@@ -60,55 +58,43 @@ export default function Courses() {
         <SectionHeading
           eyebrow="Our Programs"
           title="Courses We Offer"
-          description="From the first letters of the Arabic alphabet to complete memorization of the Holy Qur'an — a structured path for every student."
+          description="Structured Islamic education for students of all ages."
         />
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4"
-          {courses.map((c, i) => (
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+          {courses.map((course, index) => (
             <motion.div
-              key={c.name}
-              initial={{ opacity: 0, y: 30 }}
+              key={course.name}
+              initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.55, delay: i * 0.1 }}
-              className={`relative flex flex-col rounded-2xl p-8 shadow-lg transition-all hover:-translate-y-2 hover:shadow-2xl ${
-                c.featured
-                  ? "bg-masjid-600 dark:bg-masjid-800 text-ivory ring-2 ring-gold-400"
-                  : "bg-white dark:bg-masjid-900 border border-masjid-100 dark:border-masjid-800"
-              }`}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="rounded-2xl border border-masjid-100 dark:border-masjid-800 bg-white dark:bg-masjid-900 p-8 shadow-lg"
             >
-              <div
-                className={`mb-5 flex h-14 w-14 items-center justify-center rounded-xl ${
-                  c.featured ? "bg-gold-400/20 text-gold-300" : "bg-masjid-50 dark:bg-masjid-800 text-masjid-500 dark:text-gold-400"
-                }`}
-              >
-                <c.icon size={26} strokeWidth={1.5} />
-              </div>
-              <h3 className={`mt-1 font-display text-2xl font-bold ${c.featured ? "text-ivory" : "text-masjid-700 dark:text-parchment"}`}>
-                {c.name}
+              <course.icon
+                className="mb-5 text-masjid-500 dark:text-gold-400"
+                size={30}
+              />
+
+              <h3 className="mb-5 font-display text-2xl font-bold text-masjid-700 dark:text-parchment">
+                {course.name}
               </h3>
 
-              <ul className="mt-6 flex-1 space-y-3">
-                {c.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm">
+              <ul className="space-y-3">
+                {course.features.map((item) => (
+                  <li key={item} className="flex gap-2 text-sm">
                     <Check
                       size={16}
-                      className={`mt-0.5 shrink-0 ${c.featured ? "text-gold-300" : "text-masjid-500 dark:text-gold-400"}`}
+                      className="mt-1 text-masjid-500 dark:text-gold-400"
                     />
-                    <span className={c.featured ? "text-parchment/90" : "text-masjid-600 dark:text-parchment/80"}>
-                      {f}
-                    </span>
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
 
               <a
                 href="#admissions"
-                className={`mt-8 inline-flex items-center justify-center rounded-full py-3 font-semibold transition ${
-                  c.featured
-                    ? "bg-gold-500 hover:bg-gold-400 text-masjid-900"
-                    : "bg-masjid-500 hover:bg-masjid-600 text-white"
-                }`}
+                className="mt-8 inline-flex w-full justify-center rounded-full bg-masjid-500 py-3 font-semibold text-white hover:bg-masjid-600"
               >
                 Enroll Now
               </a>
