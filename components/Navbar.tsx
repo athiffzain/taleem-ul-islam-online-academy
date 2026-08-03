@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Moon, Sun, BookOpenText } from "lucide-react";
+import Image from "next/image";
+import { Menu, X, Moon, Sun } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 
 const links = [
@@ -33,9 +34,15 @@ export default function Navbar() {
     >
       <nav className="mx-auto max-w-7xl px-5 lg:px-8 flex items-center justify-between h-20">
         <a href="#home" className="flex items-center gap-2.5 group">
-          <span className="relative h-10 w-10 rounded-full bg-masjid-500 dark:bg-masjid-600 flex items-center justify-center text-gold-200 ring-1 ring-gold-400/40 group-hover:ring-gold-400 transition">
-            <BookOpenText size={18} strokeWidth={1.75} />
-          </span>
+          <span className="relative h-12 w-12 flex items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-gold-400/40">
+  <Image
+    src="/logo.png"
+    alt="Madresa-e-Taleem Ul Islam"
+    width={48}
+    height={48}
+    className="object-contain"
+  />
+</span>
           <span className="leading-tight">
             <span className="block font-display font-bold text-lg text-masjid-600 dark:text-parchment">
               Taleem Ul Islam

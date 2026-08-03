@@ -14,9 +14,10 @@ export default function OnlineClasses() {
         <SectionHeading
           eyebrow="Study From Home"
           title="Online Classes"
-          escription="Attend live, interactive Qur'an classes with experienced teachers over google meet — Tajweed correction and Islamic learning from the comfort of your home."
+          description="Attend live, interactive Qur'an classes with experienced teachers over google meet — Tajweed correction and Islamic learning from the comfort of your home."
 
-        <div className="mx-auto max-w-2xl">
+        />
+        div className="mx-auto max-w-2xl"
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +51,7 @@ export default function OnlineClasses() {
 </p>
           </motion.div>
         </div>
-      </div>
+      
     </section>
   );
 }
