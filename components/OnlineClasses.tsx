@@ -5,7 +5,8 @@ import { Clock, CalendarCheck } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
 const schedule = [
-  { batch: "All Batches", time: "Evening, at your convenient time" },
+  { batch: "All Batches", time: "3:00 PM – 11:00 PM (IST)" },
+];
 ];
 
 export default function OnlineClasses() {
@@ -47,10 +48,9 @@ export default function OnlineClasses() {
                 </li>
               ))}
             </ul>
-            <p className="mt-6 text-xs text-masjid-500 dark:text-parchment/50">
-              Exact timing is scheduled with your assigned teacher to suit your convenience.
-              Contact us to confirm your slot.
-            </p>
+            <p className="mt-6 text-sm text-masjid-600 dark:text-parchment/70 leading-relaxed">
+  <strong>Flexible Class Timings:</strong> Classes are available between <strong>3:00 PM and 11:00 PM (IST)</strong> and will be scheduled according to your convenience. <strong>Weekly Holiday:</strong> Sunday.
+</p>
           </motion.div>
         </div>
       </div>

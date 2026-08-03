@@ -99,6 +99,10 @@ export default function AdmissionForm() {
             </form>
           )}
         </motion.div>
+        <div className="mt-6 rounded-xl border border-green-200 bg-green-50 dark:bg-green-900/20 dark:border-green-800 p-5 text-center">
+  <p className="text-sm leading-relaxed text-masjid-700 dark:text-parchment/90">
+    <strong>📌 Note:</strong> For a better and faster admission process, we recommend contacting us via WhatsApp. If you face any issues while submitting the admission form, please send us a message on WhatsApp. We will be happy to assist you.
+  </p>
       </div>
     </section>
   );

@@ -93,9 +93,9 @@ export default function Hero() {
         className="relative z-10 mx-auto mb-4 grid w-full max-w-4xl grid-cols-2 gap-6 px-6 sm:grid-cols-4"
       >
         <Counter target={9} suffix="+" label="Years of Excellence" />
-        <Counter target={350} suffix="+" label="Offline Students" />
+        <Counter target={450} suffix="+" label="Offline Students" />
         <Counter target={150} suffix="+" label="Qur'an Graduates" />
-        <Counter target={7} label="Experienced Teachers" />
+        <Counter target={12} suffix="+" label="Qualified Male & Female Teachers" />
       </motion.div>
 
       <motion.a

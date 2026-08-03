@@ -17,7 +17,7 @@ export default function Home() {
       "Online Qur'an academy teaching Noorani Qaida, Nazira Qur'an, and Hifz-ul-Qur'an with Tajweed.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Pillanna Garden, Stage 3, Kadugondanahalli",
+      streetAddress: "3rd Cross, 8th Main Road, Pillanna Garden, Stage 3, Kadugondanahalli",,
       addressLocality: "Bengaluru",
       addressRegion: "Karnataka",
       postalCode: "560045",
@@ -26,7 +26,7 @@ export default function Home() {
     telephone: ["+91-7760414172", "+91-7730028313"],
     founder: {
       "@type": "Person",
-      name: "Hazrat Maulana Mohammed Nadeem Ahmed Madni Qasmi",
+      name: "Hazrat Maulana Mohammed Nadeem Ahmed Saheb Madni Qasmi",
     },
   };
 

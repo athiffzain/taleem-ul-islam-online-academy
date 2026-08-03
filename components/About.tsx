@@ -6,7 +6,7 @@ import SectionHeading from "./SectionHeading";
 import KhatamStar from "./KhatamStar";
 
 const points = [
-  { icon: Users, text: "7 experienced male and female teachers" },
+  { icon: Users, text: "12+ Qualified Male & Female Teachers" },
   { icon: BookOpen, text: "Separate classes for boys and girls" },
   { icon: Sparkles, text: "Authentic Tajweed and recitation" },
   { icon: HeartHandshake, text: "Strong Islamic values and good manners" },
@@ -37,17 +37,17 @@ export default function About() {
             <div className="space-y-4 text-[15px] leading-relaxed text-masjid-700 dark:text-parchment/85">
               <p>
                 Welcome to the official website of Taleem Ul Islam Online Academy, the
-                online branch of Madresa-e-Taleem Ul Islam, located in Pillanna Garden,
+                online branch of Madresa-e-Taleem Ul Islam, located at 3rd Cross, 8th Main Road, Pillanna Garden,Pillanna Garden,
                 Stage 3, Kadugondanahalli, Bengaluru.
               </p>
               <p>
                 Madresa-e-Taleem Ul Islam has been providing quality Islamic education
-                for the past 9 years. Alhamdulillah, our madrasa has 7 experienced male
-                and female teachers.
+for the past 9 years. Alhamdulillah, our madrasa has 12+ qualified male
+and female teachers.
               </p>
               <p>
-                Currently, more than 350 students are studying in our offline madrasa,
-                and over 150 students have successfully completed the Holy Qur&apos;an.
+                Currently, more than 450 students are studying in our offline madrasa,
+and over 150 students have successfully completed the Holy Qur'an.
               </p>
               <p>
                 We offer separate classes for boys and girls in Noorani Qaida, Nazira

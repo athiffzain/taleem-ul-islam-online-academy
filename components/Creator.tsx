@@ -19,10 +19,10 @@ export default function Creator() {
           </div>
           <div className="text-center sm:text-left">
             <p className="text-xs uppercase tracking-[0.25em] text-gold-600 dark:text-gold-400 mb-1">
-              Website Created By
+              Director of Online Branch
             </p>
             <h4 className="font-display text-xl font-bold text-masjid-700 dark:text-parchment">
-              Mufti Mohammed Athif Zain As Suvoodi
+             Hazrat Maulana Mufti Mohammed Athif Zain Saheb As Suvoodi
             </h4>
           </div>
         </motion.div>

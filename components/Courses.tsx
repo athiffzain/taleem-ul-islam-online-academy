@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check, BookMarked, ScrollText, Award } from "lucide-react";
+import { Check, BookMarked, ScrollText, Award, Library } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
 const courses = [
@@ -29,6 +29,21 @@ const courses = [
   {
     icon: Award,
     name: "Hifz-ul-Qur'an",
+    },
+{
+  icon: Library,
+  name: "Islamic Studies & Essential Learning",
+  features: [
+    "Daily Duas",
+    "Selected Ahadees",
+    "Basic Aqaid",
+    "Islamic Studies",
+    "Akhlaq & Adaab",
+    "Daily Masail",
+    "Namaz & Salah Training",
+  ],
+},
+];
     features: [
       "Complete memorization program",
       "Structured daily revision cycle",
@@ -48,7 +63,7 @@ export default function Courses() {
           description="From the first letters of the Arabic alphabet to complete memorization of the Holy Qur'an — a structured path for every student."
         />
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4"
           {courses.map((c, i) => (
             <motion.div
               key={c.name}

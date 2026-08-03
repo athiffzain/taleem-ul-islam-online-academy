@@ -36,14 +36,16 @@ export default function Contact() {
                 Madresa-e-Taleem Ul Islam
               </h3>
               <p className="text-sm text-masjid-600 dark:text-parchment/75 leading-relaxed">
-                Pillanna Garden, Stage 3
-                <br />
-                Kadugondanahalli
-                <br />
-                Bengaluru, Karnataka – 560045
-                <br />
-                India
-              </p>
+  3rd Cross, 8th Main Road
+  <br />
+  Pillanna Garden, Stage 3
+  <br />
+  Kadugondanahalli
+  <br />
+  Bengaluru, Karnataka – 560045
+  <br />
+  India
+</p>
             </div>
 
             <div className="rounded-2xl bg-white dark:bg-masjid-900 border border-masjid-100 dark:border-masjid-800 p-6 shadow-sm">
