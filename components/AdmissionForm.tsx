@@ -63,6 +63,24 @@ export default function AdmissionForm() {
               </div>
 
               <div>
+  <label className={labelClass}>Previous Islamic Education / Madrasa Details</label>
+  <input
+    className={inputClass}
+    placeholder="Madrasa name, Qaida/Nazira/Hifz details"
+    required
+  />
+</div>
+
+<div>
+  <label className={labelClass}>Address</label>
+  <input
+    className={inputClass}
+    placeholder="Full address"
+    required
+  />
+</div>
+
+              <div>
                 <label className={labelClass}>Course</label>
                 <input className={inputClass} required />
               </div>
