@@ -14,8 +14,7 @@ export default function OnlineClasses() {
         <SectionHeading
           eyebrow="Study From Home"
           title="Online Classes"
-          description="Attend live, interactive classes with your assigned teacher over Zoom or Google Meet — Tajweed correction in real time, wherever you are."
-        />
+          escription="Attend live, interactive Qur'an classes with experienced teachers over google meet — Tajweed correction and Islamic learning from the comfort of your home."
 
         <div className="mx-auto max-w-2xl">
           <motion.div
